@@ -1,7 +1,7 @@
 ---
 import Icon from '@ui/icons/Icon.astro';
 import { featuresMenu } from '@utils/megaMenu/features';
-const sectionDescription = 'Discover how DataNova can empower your business';
+const sectionDescription = 'Tudo que você precisa para gerir seu MEI';
 const currentPath = Astro.url.pathname;
 ---
 
@@ -11,14 +11,14 @@ const currentPath = Astro.url.pathname;
   <button
     id="mega-menu-features"
     type="button"
-    class={`hs-dropdown-toggle flex w-full items-center rounded-lg p-2 font-medium text-slate-800 hover:bg-slate-100 focus:bg-slate-100 focus:outline-hidden ${
+    class={`hs-dropdown-toggle flex w-full items-center rounded-lg p-2 font-medium text-dokei-primary hover:bg-dokei-muted focus:bg-dokei-muted focus:outline-hidden ${
       currentPath.startsWith('/features') ? 'underline underline-offset-4' : ''
     }`}
     aria-haspopup="menu"
     aria-expanded="false"
-    aria-label="Mega Menu"
+    aria-label="Menu Serviços"
   >
-    Features <Icon name="arrowDownRight" />
+    Serviços <Icon name="arrowDownRight" />
   </button>
 
   <div
@@ -28,34 +28,38 @@ const currentPath = Astro.url.pathname;
     aria-labelledby="mega-menu-features"
   >
     <div
-      class="from-teal-100 via-transparent to-white px-4 py-2 lg:mx-8 xl:mx-6 xl:rounded-lg xl:bg-white xl:bg-linear-to-t/oklch xl:px-16 xl:py-10 xl:shadow-lg xl:ring-1 xl:ring-teal-950/5"
+      class="from-dokei-muted xl:ring-dokei-primary/5 via-transparent to-white px-4 py-2 lg:mx-8 xl:mx-6 xl:rounded-lg xl:bg-white xl:bg-linear-to-t/srgb xl:px-16 xl:py-10 xl:shadow-lg xl:ring-1"
     >
-      <p class="text-sm text-slate-600">
+      <p class="text-dokei-muted-foreground text-sm">
         {sectionDescription}
       </p>
-      <hr class="mb-5 border border-teal-300" />
+      <hr class="border-dokei-border mb-5 border" />
 
       <div class="gap-4 py-1 md:grid md:grid-cols-2 md:p-2">
         {
           featuresMenu.map(section => (
             <div class="flex flex-col">
-              <p class="text-sm text-slate-600">{section.sectionTitle}</p>
+              <p class="text-dokei-muted-foreground text-sm">
+                {section.sectionTitle}
+              </p>
 
               {section.items.map(item => (
                 <a
-                  class="flex gap-x-4 rounded-lg p-3 hover:bg-slate-100 focus:bg-slate-100 focus:outline-hidden"
+                  class="hover:bg-dokei-muted focus:bg-dokei-muted flex gap-x-4 rounded-lg p-3 focus:outline-hidden"
                   href={item.href}
                 >
                   <Icon
                     name={item.icon}
-                    class="mt-1 size-5 shrink-0 text-slate-800"
+                    class="text-dokei-primary mt-1 size-5 shrink-0"
                   />
 
                   <div class="grow">
-                    <p class="text-sm font-medium text-slate-800">
+                    <p class="text-dokei-primary text-sm font-medium">
                       {item.title}
                     </p>
-                    <p class="text-sm text-slate-500">{item.description}</p>
+                    <p class="text-dokei-muted-foreground text-sm">
+                      {item.description}
+                    </p>
                   </div>
                 </a>
               ))}

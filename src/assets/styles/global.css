@@ -40,6 +40,19 @@
   --color-teal-800: oklch(59.53% 0.1 194.8);
   --color-teal-900: oklch(54.08% 0.0908 194.8);
   --color-teal-950: oklch(32.68% 0.047 195.1);
+
+  /* Dokei brand colors (light theme) */
+  --color-dokei-primary: #1a4d2e;
+  --color-dokei-primary-foreground: #ffffff;
+  --color-dokei-secondary: #7ba23f;
+  --color-dokei-secondary-foreground: #ffffff;
+  --color-dokei-accent: #6b9b37;
+  --color-dokei-accent-foreground: #ffffff;
+  --color-dokei-muted: #f4f7f0;
+  --color-dokei-muted-foreground: #4a6741;
+  --color-dokei-border: #d4e5c7;
+  --color-dokei-background: #ffffff;
+  --color-dokei-foreground: #1a4d2e;
 }
 
 @theme inline {
@@ -47,8 +60,7 @@
     linear infinite;
 
   /* https://tailwindcss.com/docs/font-family#customizing-your-theme */
-  --font-dm-sans: 'DM Sans', sans-serif;
-  --font-work-sans: 'Work Sans', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 
   @keyframes scroll {
     to {
@@ -71,11 +83,11 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-slate-200, currentColor);
+    border-color: var(--color-dokei-border, currentColor);
   }
 
   body {
-    @apply font-work-sans;
+    @apply font-montserrat;
   }
 
   h1,
@@ -83,7 +95,7 @@
   h3,
   h4,
   .dm-sans {
-    @apply font-dm-sans;
+    @apply font-montserrat;
   }
 
   button:not(:disabled),

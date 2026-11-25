@@ -499,4 +499,129 @@ export const Icons = {
     strokeLinejoin: 'round',
     stroke: 'currentColor',
   },
+  fileText: {
+    paths: [
+      {
+        d: 'M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z',
+      },
+      {
+        d: 'M14 2v5a1 1 0 0 0 1 1h5',
+      },
+      {
+        d: 'M10 9H8',
+      },
+      {
+        d: 'M16 13H8',
+      },
+      {
+        d: 'M16 17H8',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
+  trendingUp: {
+    paths: [
+      {
+        d: 'M16 7h6v6',
+      },
+      {
+        d: 'm22 7-8.5 8.5-5-5L2 17',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
+  bell: {
+    paths: [
+      {
+        d: 'M10.268 21a2 2 0 0 0 3.464 0',
+      },
+      {
+        d: 'M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
+  calculator: {
+    paths: [
+      {
+        d: 'M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z',
+      },
+      {
+        d: 'M8 6h8',
+      },
+      {
+        d: 'M16 14v4',
+      },
+      {
+        d: 'M16 10h.01',
+      },
+      {
+        d: 'M12 10h.01',
+      },
+      {
+        d: 'M8 10h.01',
+      },
+      {
+        d: 'M12 14h.01',
+      },
+      {
+        d: 'M8 14h.01',
+      },
+      {
+        d: 'M12 18h.01',
+      },
+      {
+        d: 'M8 18h.01',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
+  fileSpreadsheet: {
+    paths: [
+      {
+        d: 'M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z',
+      },
+      {
+        d: 'M14 2v5a1 1 0 0 0 1 1h5',
+      },
+      {
+        d: 'M8 13h2',
+      },
+      {
+        d: 'M14 13h2',
+      },
+      {
+        d: 'M8 17h2',
+      },
+      {
+        d: 'M14 17h2',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
 };

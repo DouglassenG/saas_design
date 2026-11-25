@@ -1,21 +1,22 @@
 ---
 const formStrings = {
-  legend: 'Subscribe to our newsletter',
-  placeholder: 'Enter your email',
-  submit: 'Submit',
-  description:
-    "Get all the information you need. Enter your email, and we'll be in touch.",
+  legend: 'Newsletter da Dokei',
+  placeholder: 'Digite seu e-mail',
+  submit: 'Enviar',
+  description: 'Newsletter em configuração.',
 };
 ---
 
 <form>
   {/* Fieldset for grouping form elements */}
   <fieldset
-    class="mt-4 flex flex-col items-center gap-2 rounded-lg bg-teal-400 p-2 sm:flex-row sm:gap-3"
+    class="bg-dokei-border mt-4 flex flex-col items-center gap-2 rounded-lg p-2 sm:flex-row sm:gap-3"
     aria-labelledby="form-legend"
   >
     {/* Visible legend for screen readers */}
-    <legend id="form-legend" class="sr-only text-lg font-medium text-slate-700"
+    <legend
+      id="form-legend"
+      class="text-dokei-primary sr-only text-lg font-medium"
       >{formStrings.legend}</legend
     >
 
@@ -26,7 +27,7 @@ const formStrings = {
         type="email"
         id="email-input"
         name="email"
-        class="block w-full rounded-lg border-transparent px-4 py-3 text-sm focus:border-teal-700/80 focus:ring-teal-700/80"
+        class="focus:border-dokei-primary focus:ring-dokei-primary block w-full rounded-lg border-transparent px-4 py-3 text-sm"
         placeholder={formStrings.placeholder}
         required
         aria-label={formStrings.placeholder}
@@ -39,15 +40,15 @@ const formStrings = {
     {/* Submit button */}
     <button
       type="submit"
-      class="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent bg-teal-100 p-3 text-sm font-medium whitespace-nowrap text-slate-700 transition duration-300 hover:bg-teal-700/80 hover:text-white focus:bg-teal-700 focus:text-white focus:outline-hidden sm:w-auto"
-      aria-label="Submit email"
+      class="bg-dokei-primary hover:bg-dokei-primary/80 focus:bg-dokei-primary/80 inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-transparent p-3 text-sm font-medium whitespace-nowrap text-white transition duration-300 hover:text-white focus:text-white focus:outline-hidden sm:w-auto"
+      aria-label={formStrings.submit}
     >
       {formStrings.submit}
     </button>
   </fieldset>
 
   {/* Description paragraph with ARIA association */}
-  <p id="form-description" class="mt-3 text-sm text-slate-400">
+  <p id="form-description" class="text-dokei-muted-foreground mt-3 text-sm">
     {formStrings.description}
   </p>
 </form>
