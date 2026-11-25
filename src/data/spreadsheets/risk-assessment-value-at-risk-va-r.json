@@ -1,5 +1,5 @@
 {
-  "title": "Risk Assessment: Value at Risk (VaR)",
-  "description": "This model allows for the estimation of value at risk (VaR), providing insights based on the profit or loss outcomes from simulation models.",
+  "title": "Recibo em PDF",
+  "description": "Gere recibos com os dados do cliente, o serviço, o valor, a forma de pagamento e a data de emissão.",
   "url": "#"
 }

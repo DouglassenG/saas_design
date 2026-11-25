@@ -4,125 +4,132 @@ import BaseLayout from '@layout/BaseLayout.astro';
 import Icon from '@ui/icons/Icon.astro';
 
 // Hero
-const preTitle = 'Editions';
-const title = 'Essential Edition and Advanced Edition';
+const preTitle = 'Funcionalidades';
+const title = 'Ferramentas para o Negócio e para as Obrigações';
 const description = [
   {
     content:
-      "The DataNova Core comes in two editions: Essential and Advanced. Choose the one that fits your goals to unlock your data's full potential. Upgrading is simple when you're ready to grow.",
+      'A Dokei reúne em uma única conta gratuita as ferramentas para organizar o dia a dia e as obrigações do seu MEI. Não há edições nem planos para escolher.',
   },
   {
     content:
-      'The <strong>Essential Edition</strong> equips you with robust analytics tools, 30+ statistical models, and 25+ visualization templates to transform insights into action.',
+      'As ferramentas de <strong>Negócio</strong> ajudam a emitir recibos, registrar entradas e saídas e calcular o preço do seu serviço.',
   },
   {
     content:
-      'The <strong>Advanced Edition</strong> enhances your capabilities with AI-powered analytics, including automated pattern recognition, anomaly detection, and advanced forecasting tools to keep you ahead of the curve.',
+      'As ferramentas de <strong>Obrigações</strong> ajudam a acompanhar o DAS e a preparar a declaração anual do seu faturamento.',
   },
 ];
 
-// Comparison Table
+// Feature table
 const comparisonData = [
   {
-    feature: 'Interactive dashboards for visualization',
+    feature: 'Recibos profissionais em PDF',
     link: '#',
     essential: true,
-    advanced: true,
+    advanced: false,
   },
   {
-    feature: 'Advanced AI-driven predictive modeling',
+    feature: 'Compartilhamento do recibo pelo WhatsApp',
     link: '#',
+    essential: true,
+    advanced: false,
+  },
+  {
+    feature: 'Link público do recibo',
+    essential: true,
+    advanced: false,
+  },
+  {
+    feature: 'Registro de entradas e saídas',
+    essential: true,
+    advanced: true,
+  },
+  {
+    feature: 'Carteiras Negócio e Pessoal separadas',
+    essential: true,
+    advanced: false,
+  },
+  {
+    feature: 'Extrato com filtros por carteira e tipo',
+    essential: true,
+    advanced: false,
+  },
+  {
+    feature: 'Calculadora de Preço',
+    essential: true,
+    advanced: false,
+  },
+  {
+    feature: 'Lembretes do DAS mensal',
     essential: false,
     advanced: true,
   },
   {
-    feature: 'Automatic data cleaning and preprocessing',
-    essential: true,
-    advanced: true,
-  },
-  {
-    feature: 'Integration with external data sources (APIs, databases)',
+    feature: 'Lembrete da declaração anual (DASN-SIMEI)',
     essential: false,
     advanced: true,
   },
   {
-    feature: 'Customizable simulation parameters',
+    feature: 'Acompanhamento do limite anual de faturamento',
     essential: true,
     advanced: true,
   },
   {
-    feature: 'Real-time collaboration with team members',
-    essential: false,
-    advanced: true,
-  },
-  {
-    feature: 'Data import/export in multiple formats (CSV, JSON, etc.)',
+    feature: 'Gráfico da movimentação mensal',
     essential: true,
     advanced: true,
   },
   {
-    feature: 'Batch processing for large datasets',
-    essential: false,
-    advanced: true,
-  },
-  {
-    feature: 'Custom macro creation for repetitive tasks',
+    feature: 'Histórico de rendimentos por mês',
     essential: true,
     advanced: true,
   },
   {
-    feature: 'Scenario analysis and optimization tools',
+    feature: 'Assistente virtual Kauane',
     essential: true,
-    advanced: true,
-  },
-  {
-    feature: 'Enhanced charting with extended templates',
-    essential: true,
-    advanced: true,
-  },
-  {
-    feature: 'Exportable analysis reports with templates',
-    essential: true,
-    advanced: true,
-  },
-  {
-    feature: 'Support for cloud-based backups',
-    essential: false,
     advanced: true,
   },
 ];
 
 // Info Section
 const infoSection = {
-  title: 'System requirements',
+  title: 'Onde usar',
   description:
-    'Requires Windows 10/11 with Excel 2016, 2019, 2021, or Office 365 (32-bit, 64-bit, or Arm) or macOS 11 (Big Sur) or later.',
+    'A Dokei é responsiva e funciona no computador, tablet ou celular. Você pode acessar sua conta e gerenciar seu negócio de onde estiver.',
   trialInfo:
-    'A 30-day free trial is available for each edition, with no commitment required.',
+    'A Dokei é 100% gratuita. Crie sua conta e comece a organizar seu MEI.',
   buttons: [
     {
-      text: 'Download the Essential Edition',
-      link: '#',
-      style:
-        'bg-teal-50 hover:bg-teal-50/70 text-slate-800 focus:bg-teal-50/70',
+      text: 'Já tenho conta',
+      link: 'https://dokei-web-xhrp.vercel.app/login',
+      style: 'bg-white hover:bg-white/70 text-dokei-primary focus:bg-white/70',
     },
     {
-      text: 'Download the Advanced Edition',
-      link: '#',
-      style: 'bg-teal-600 text-white hover:bg-teal-600/80 focus:bg-teal-600/80',
+      text: 'Começar grátis',
+      link: 'https://dokei-web-xhrp.vercel.app/cadastro',
+      style:
+        'bg-dokei-primary text-white hover:bg-dokei-primary/80 focus:bg-dokei-primary/80',
     },
   ],
 };
+
+// SEO metadata for the page
+const seo = {
+  title: 'Funcionalidades | Dokei',
+  description:
+    'Veja as ferramentas da Dokei para o negócio e para as obrigações do MEI.',
+};
 ---
 
-<BaseLayout>
-  <section class="bg-linear-to-tl/oklch from-teal-200 via-transparent to-white">
+<BaseLayout seo={seo}>
+  <section class="bg-linear-to-tl/srgb from-dokei-border via-transparent to-white">
     <div class="mx-auto max-w-[85rem] px-4 pt-40 pb-12 sm:px-6 lg:px-8">
       <div class="max-w-7xl">
         <div class="mx-auto max-w-2xl lg:mx-0">
           <p class="text-base/7 font-medium text-slate-400">{preTitle}</p>
           <h1
-            class="mt-1 text-4xl text-balance text-slate-800 sm:text-5xl md:text-6xl lg:text-7xl"
+            class="mt-1 text-4xl text-balance text-dokei-primary sm:text-5xl md:text-6xl lg:text-7xl"
           >
             {title}
           </h1>
@@ -138,20 +145,20 @@ const infoSection = {
     </div>
   </section>
 
-  <section class="bg-linear-to-bl/oklch from-teal-200 via-transparent to-white">
+  <section class="bg-linear-to-bl/srgb from-dokei-border via-transparent to-white">
     <div
       class="relative mx-auto max-w-[60rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14"
     >
       <div class="hidden py-2 md:block">
         <div class="grid grid-cols-4 gap-6">
           <div class="col-span-1 col-start-3 mx-auto">
-            <h3 class="text-center text-lg font-medium text-slate-800">
-              Essential Edition
+            <h3 class="text-center text-lg font-medium text-dokei-primary">
+              Negócio
             </h3>
           </div>
           <div class="col-span-1 mx-auto">
-            <h3 class="text-center text-lg font-medium text-slate-800">
-              Advanced Edition
+            <h3 class="text-center text-lg font-medium text-dokei-primary">
+              Obrigações
             </h3>
           </div>
         </div>
@@ -172,7 +179,7 @@ const infoSection = {
                       {item.feature}{' '}
                       <Icon
                         name="info"
-                        class="transition-color size-5 shrink-0 text-slate-800 duration-300 group-hover:text-slate-500"
+                        class="transition-color size-5 shrink-0 text-dokei-primary duration-300 group-hover:text-slate-500"
                       />
                     </a>
                   ) : (
@@ -184,13 +191,13 @@ const infoSection = {
               <li class={`col-span-1 border-b border-slate-200 py-1.5 md:py-3`}>
                 <div class="grid grid-cols-2 sm:grid-cols-4 md:flex">
                   <span class="self-end text-slate-500 sm:col-span-2 md:hidden">
-                    Essential Edition
+                    Negócio
                   </span>
                   <span class="place-self-center md:mx-auto">
                     {item.essential ? (
                       <Icon
                         name="check"
-                        class="size-5 shrink-0 text-teal-700"
+                        class="size-5 shrink-0 text-dokei-accent"
                       />
                     ) : (
                       <Icon
@@ -205,13 +212,13 @@ const infoSection = {
               <li class={`col-span-1 border-b border-slate-200 py-1.5 md:py-3`}>
                 <div class="grid grid-cols-2 sm:grid-cols-4 md:flex">
                   <span class="self-end text-slate-500 sm:col-span-2 md:hidden">
-                    Advanced Edition
+                    Obrigações
                   </span>
                   <span class="place-self-center md:mx-auto">
                     {item.advanced ? (
                       <Icon
                         name="check"
-                        class="size-5 shrink-0 text-teal-700"
+                        class="size-5 shrink-0 text-dokei-accent"
                       />
                     ) : (
                       <Icon
@@ -232,11 +239,11 @@ const infoSection = {
     class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 md:py-14 lg:px-8 lg:py-20"
   >
     <div
-      class="grid divide-y divide-dashed divide-slate-400 rounded-3xl bg-teal-300 px-5 py-5 shadow-xl lg:grid-cols-2 lg:divide-x lg:divide-y-0"
+      class="grid divide-y divide-dashed divide-slate-400 rounded-3xl bg-dokei-border px-5 py-5 shadow-xl lg:grid-cols-2 lg:divide-x lg:divide-y-0"
     >
       <div class="content-center py-5 sm:p-5">
         <h3
-          class="text-2xl font-bold tracking-tight text-balance text-slate-800"
+          class="text-2xl font-bold tracking-tight text-balance text-dokei-primary"
         >
           {infoSection.title}
         </h3>

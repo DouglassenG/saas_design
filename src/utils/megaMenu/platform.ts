@@ -1,27 +1,27 @@
 export const platformMenu = [
   {
     href: '/platform',
-    title: 'DataNova Core',
-    description: 'AI-powered risk analysis and data modeling engine.',
+    title: 'Emitir Recibo',
+    description:
+      'Gere recibos profissionais em PDF e compartilhe pelo WhatsApp.',
     image: 'datanova',
   },
   {
     href: '/platform',
-    title: 'InsightFlow Cloud',
-    description: 'A web-based platform for collaborative data analytics.',
+    title: 'Controle Financeiro',
+    description: 'Registre entradas e saídas separando negócio do pessoal.',
     image: 'if_cloud',
   },
   {
     href: '/platform',
-    title: 'InsightFlow Planner',
-    description:
-      'Advanced forecasting and scenario planning for business strategy.',
+    title: 'Lembretes DAS',
+    description: 'Nunca perca o prazo do seu DAS e obrigações fiscais.',
     image: 'if_planner',
   },
   {
     href: '/platform',
-    title: 'InsightFlow Visualizer',
-    description: 'Custom dashboards and interactive data storytelling.',
+    title: 'Declaração de Rendimentos',
+    description: 'Veja quanto movimentou no ano e declare seu faturamento MEI.',
     image: 'if_visualizer',
   },
 ];

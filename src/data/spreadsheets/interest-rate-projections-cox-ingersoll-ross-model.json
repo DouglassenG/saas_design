@@ -1,5 +1,5 @@
 {
-  "title": "Interest Rate Projections: Cox-Ingersoll-Ross Model",
-  "description": "A spreadsheet designed to model interest rate trends using the Cox-Ingersoll-Ross model, simulating changes over time across multiple discrete periods. The example is described in detail in <a class=\"text-slate-400 hover:text-slate-500 transition-colors duration-300\" href=\"https://themewagon.com/\">this article</a>.",
+  "title": "Calculadora de Preço",
+  "description": "Informe o valor da sua hora, o tempo do serviço, os custos extras e a margem de lucro desejada para descobrir quanto cobrar. O passo a passo está <a class=\"text-dokei-accent underline hover:text-dokei-primary transition-colors duration-300\" href=\"/support/articles/unlocking-the-power-of-predictive-analytics\">neste artigo</a>.",
   "url": "#"
 }

@@ -1,20 +1,23 @@
 ---
 import Button from '@ui/Button.astro';
 
-const title = 'Turn Excel® into Your Data Intelligence Powerhouse';
+const title = 'Gestão simples para MEI';
 const subTitle =
-  'Get instant insights from your spreadsheets with advanced analytics and stunning visualizations. No coding required. Make confident decisions backed by data in minutes, not days.';
+  'Chega de planilhas confusas e burocracia. Organize seu negócio, emita recibos e mantenha suas obrigações em dia — tudo em um só lugar.';
 const secondaryCTA = {
-  text: 'Start Free Trial',
-  href: 'https://themewagon.com/themes/datanova/',
+  text: 'Já tenho conta',
+  href: 'https://dokei-web-xhrp.vercel.app/login',
 };
-const primaryCTA = { text: 'View Pricing', href: '/downloads/license-options' };
+const primaryCTA = {
+  text: 'Começar grátis',
+  href: 'https://dokei-web-xhrp.vercel.app/cadastro',
+};
 ---
 
 {/* Hero Content */}
 <div class="mx-auto max-w-4xl text-left select-none sm:text-center">
   <h1
-    class="block text-4xl text-balance text-slate-800 sm:text-5xl md:text-6xl lg:text-7xl"
+    class="text-dokei-primary block text-4xl text-balance sm:text-5xl md:text-6xl lg:text-7xl"
   >
     {title}
   </h1>
@@ -28,7 +31,16 @@ const primaryCTA = { text: 'View Pricing', href: '/downloads/license-options' };
 
 {/* CTA Buttons */}
 <div class="flex flex-col justify-center gap-5 sm:flex-row">
-  <Button href=#! variant="secondary"
-    >{secondaryCTA.text}</Button>
-  <Button href={primaryCTA.href} variant="primary">{primaryCTA.text}</Button>
+  <Button
+    href={secondaryCTA.href}
+    variant="secondary"
+    className="border-dokei-primary text-dokei-primary hover:border-dokei-primary hover:bg-dokei-primary hover:text-white"
+    >{secondaryCTA.text}</Button
+  >
+  <Button
+    href={primaryCTA.href}
+    variant="primary"
+    className="bg-dokei-primary hover:bg-dokei-primary/80 focus:bg-dokei-primary/80"
+    >{primaryCTA.text}</Button
+  >
 </div>

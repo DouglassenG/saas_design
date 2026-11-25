@@ -45,9 +45,9 @@ const schema: WithContext<Thing> = {
   isPartOf: {
     '@type': 'WebSite',
     url: `${Astro.site}`,
-    name: 'DataNova',
+    name: 'Dokei',
     description:
-      'DataNova Analytics Inc. provides advanced analytics for Excel to help businesses unlock actionable insights quickly with no coding required.',
+      'Simplifique a gestão do seu MEI. Ferramentas simples para você focar no que realmente importa: fazer seu negócio crescer.',
   },
 };
 ---
@@ -60,7 +60,7 @@ const schema: WithContext<Thing> = {
           validHeadings.length > 0 && (
             <div class="relative mt-10 rounded-lg border border-dashed border-slate-300 p-5 md:mt-0 md:border-none md:p-0 md:pb-24">
               <nav class="sticky top-10 md:top-32">
-                <small class="font-semibold uppercase">On this page</small>
+                <small class="font-semibold uppercase">Nesta página</small>
                 <ul class="mt-2 space-y-2">
                   {validHeadings.map(heading => (
                     <li>
@@ -93,7 +93,7 @@ const schema: WithContext<Thing> = {
           </ul>
 
           <h1
-            class="mb-4 text-center text-2xl text-balance text-slate-800 sm:text-3xl md:mb-6 md:text-left xl:text-5xl"
+            class="mb-4 text-center text-2xl text-balance text-dokei-primary sm:text-3xl md:mb-6 md:text-left xl:text-5xl"
           >
             {post.data.title}
           </h1>
@@ -104,9 +104,9 @@ const schema: WithContext<Thing> = {
           </section>
           <PostFeedback
             client:only="svelte"
-            title="Was this post helpful?"
-            firstChoice="Yes"
-            secondChoice="No"
+            title="Este conteúdo foi útil?"
+            firstChoice="Sim"
+            secondChoice="Não"
             slug={slug}
           >
             <fragment slot="helpfulIcon">

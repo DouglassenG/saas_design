@@ -1,37 +1,36 @@
 export const downloadsMenu = [
   {
-    sectionTitle: 'Download',
+    sectionTitle: 'Começar',
     items: [
       {
-        icon: 'download',
-        title: 'DataNova Core',
-        description: 'Download the free trial version of the DataNova Core.',
+        icon: 'portfolio',
+        title: 'Comece a usar a Dokei',
+        description: 'Crie sua conta gratuita e organize seu MEI.',
         href: '/downloads/datanova-core',
       },
     ],
   },
   {
-    sectionTitle: 'Licensing',
+    sectionTitle: 'Gratuidade e contato',
     items: [
       {
         icon: 'badge',
-        title: 'License Options',
+        title: '100% Gratuito',
         description:
-          'Choose the best license for your needs and unlock full features.',
+          'Todas as ferramentas de gestão para o seu MEI, sem mensalidades.',
         href: '/downloads/license-options',
       },
       {
         icon: 'chatBubble',
-        title: 'Request a Quote',
-        description:
-          'Inquire about custom pricing, volume discounts, or tailored solutions.',
+        title: 'Fale com a Dokei',
+        description: 'Envie suas dúvidas, comentários ou sugestões.',
         href: '/downloads/request-quote',
       },
       {
         icon: 'arrowPath',
-        title: 'Subscription Licensing',
+        title: 'Conta gratuita e dúvidas',
         description:
-          'Register the DataNova Core with a subscription license for seamless updates.',
+          'Veja como funciona a conta e as perguntas mais frequentes.',
         href: '/downloads/subscription-licensing',
       },
     ],

@@ -1,5 +1,5 @@
 {
-  "title": "Asset Portfolio",
-  "description": "This example demonstrates the creation of a 10-year asset portfolio using multivariate normal distribution to model the correlation between different asset classes.",
+  "title": "Carteiras Negócio e Pessoal",
+  "description": "Separe o dinheiro do negócio do dinheiro pessoal e veja as entradas, as saídas e o saldo de cada carteira.",
   "url": "#"
 }

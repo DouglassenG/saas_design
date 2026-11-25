@@ -3,36 +3,36 @@ import Icon from '@ui/icons/Icon.astro';
 
 // Content for the section title and subtitle
 const title =
-  'Why choose <span class="text-teal-700">Data</span><span class="font-normal text-slate-400">Nova</span>?';
+  'Por que escolher a <span class="text-dokei-accent">Dokei</span>?';
 const subTitle =
-  'Experience the perfect balance of power and simplicity in data analytics. From startups to enterprises, DataNova empowers teams to extract meaningful insights from their data while maintaining seamless integration with existing workflows. Transform the way you analyze, visualize, and act on your data.';
+  'A Dokei nasceu para resolver um problema real: a falta de ferramentas simples e acessíveis para o Microempreendedor Individual organizar seu negócio. Sem planilhas complicadas, sem mensalidades, sem complicação.';
 
 const features = [
   {
     borderClasses: 'md:border-l md:border-r',
-    gradientClasses: 'bg-linear-to-l/oklch from-teal-200 to-transparent',
+    gradientClasses: 'bg-linear-to-l/srgb from-dokei-border to-transparent',
     icon: 'cursorRays',
-    heading: 'Built for everyone',
+    heading: 'Nossa Missão',
     description:
-      "Whether you're a business analyst or data scientist, DataNova's intuitive interface makes advanced analytics accessible. Start with simple visualizations and progress to complex predictive models at your own pace.",
+      'Simplificar a rotina de quem empreende sozinho, tirando a burocracia do caminho para você focar em fazer seu negócio crescer.',
   },
   {
     borderClasses: 'border-b border-t md:border-b-0',
     gridClasses: 'md:col-start-2 md:col-end-3',
-    gradientClasses: 'bg-linear-to-t/oklch from-teal-200 to-transparent',
-    icon: 'cog',
-    heading: 'Enterprise-grade analytics',
+    gradientClasses: 'bg-linear-to-t/srgb from-dokei-border to-transparent',
+    icon: 'badge',
+    heading: '100% Gratuito',
     description:
-      'Harness the full power of advanced analytics with our comprehensive toolset. From automated pattern recognition to custom modeling, DataNova scales with your analytical needs while maintaining exceptional performance.',
+      'Acreditamos que todo MEI merece boas ferramentas de gestão sem pagar por isso. Por isso a Dokei é e continuará sendo gratuita.',
   },
   {
     borderClasses: 'md:border-l md:border-r md:border-t',
     gridClasses: 'md:col-end-4',
-    gradientClasses: 'bg-linear-to-tl/oklch from-teal-200 to-transparent',
+    gradientClasses: 'bg-linear-to-tl/srgb from-dokei-border to-transparent',
     icon: 'puzzle',
-    heading: 'Seamless integration',
+    heading: 'Compromisso com Você',
     description:
-      'Keep your existing Excel workflow while adding powerful analytics capabilities. DataNova works where you do, transforming your familiar spreadsheets into a sophisticated business intelligence platform.',
+      'Construímos a Dokei ouvindo quem vive a realidade do MEI todos os dias, sempre priorizando simplicidade e segurança dos seus dados.',
   },
 ];
 ---
@@ -48,7 +48,7 @@ const features = [
       class="mx-auto max-w-lg pb-5 text-center md:col-span-2 lg:mx-0 lg:flex-auto lg:text-left"
     >
       <h2
-        class="text-2xl font-semibold tracking-tight text-balance text-slate-800 md:text-3xl md:leading-tight"
+        class="text-2xl font-semibold tracking-tight text-balance text-dokei-primary md:text-3xl md:leading-tight"
       >
         <Fragment set:html={title} />
       </h2>
@@ -70,10 +70,10 @@ const features = [
               class={`group pointer-events-none absolute inset-0 h-full w-full ${feature.gradientClasses} opacity-0 transition duration-300 group-hover:opacity-100`}
             />
             <div class="relative z-10 mb-4 px-10">
-              <Icon name={feature.icon} />
+              <Icon name={feature.icon} class="text-dokei-accent! size-6" />
             </div>
             <div class="relative z-10 mb-2 px-10 text-lg font-semibold">
-              <span class="inline-block text-balance text-slate-800 transition duration-300 group-hover:translate-x-2">
+              <span class="inline-block text-balance text-dokei-primary transition duration-300 group-hover:translate-x-2">
                 {feature.heading}
               </span>
             </div>

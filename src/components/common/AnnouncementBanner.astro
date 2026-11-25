@@ -1,21 +1,21 @@
 ---
 import Icon from '@ui/icons/Icon.astro';
 
-const text = 'Introducing DataNova';
-const linkText = 'Now ready to try!';
-const linkHref = 'https://themewagon.com/themes/datanova/';
+const text = 'Gestão simples para MEI';
+const linkText = 'Comece grátis agora';
+const linkHref = 'https://dokei-web-xhrp.vercel.app/cadastro';
 ---
 
 <div class="flex justify-center">
-  <div class="rounded-xl bg-slate-50 shadow-md">
+  <div class="rounded-xl bg-white shadow-md">
     <a
-      href={'#!'}
+      href={linkHref}
       rel="noopener noreferrer"
       class="group flex h-9 w-fit items-center justify-center gap-0 rounded-xl transition duration-300"
       aria-label=`${text} - ${linkText}`
     >
       <div
-        class="flex h-full w-fit items-center gap-2 rounded-xl bg-linear-to-tr/oklch from-teal-800 to-teal-700 px-3"
+        class="from-dokei-primary to-dokei-muted-foreground flex h-full w-fit items-center gap-2 rounded-xl bg-linear-to-tr/srgb px-3"
       >
         <span class="text-sm text-white">{text}</span>
       </div>
@@ -23,7 +23,7 @@ const linkHref = 'https://themewagon.com/themes/datanova/';
         class="hidden h-full w-fit items-center justify-center gap-2 px-3 sm:flex"
       >
         <span
-          class="text-astro-slate-100 text-sm transition duration-300 group-hover:underline"
+          class="text-dokei-primary text-sm transition duration-300 group-hover:underline"
           >{linkText}</span
         >
         <Icon name="chevronRight" />

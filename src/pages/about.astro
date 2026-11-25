@@ -5,70 +5,70 @@ import type { WithContext, Thing } from 'schema-dts';
 
 // Data describing the "About" section content
 const aboutData = {
-  title: 'DataNova,',
+  title: 'Feita por quem entende o desafio de empreender sozinho',
   description:
-    'founded in 2018, is a leading provider of powerful analytics tools that transform your Excel workspace into a comprehensive analytics powerhouse, making data analysis accessible and actionable for businesses worldwide.',
+    'A Dokei nasceu para resolver um problema real: a falta de ferramentas simples e acessíveis para o Microempreendedor Individual organizar seu negócio. Sem planilhas complicadas, sem mensalidades, sem complicação.',
   statistics: [
     {
-      label: 'Industry sectors served',
-      value: '15+',
+      label: 'Gratuito para o MEI',
+      value: '100%',
     },
     {
-      label: 'Data points processed',
-      value: 'Billions',
+      label: 'Ferramentas em um só lugar',
+      value: '5',
     },
     {
-      label: 'Custom reports generated',
-      value: '500,000+',
+      label: 'Carteiras separadas: Negócio e Pessoal',
+      value: '2',
     },
   ],
 };
 
 // Data describing the expertise section
 const expertiseData = {
-  title: 'Our expertise:',
+  title: 'O que nos move:',
   expertise: [
     {
-      title: 'AI-powered insights:',
+      title: 'Nossa Missão',
       description:
-        'Uncover deep insights and predict trends with advanced AI algorithms for proactive decision-making.',
+        'Simplificar a rotina de quem empreende sozinho, tirando a burocracia do caminho para você focar em fazer seu negócio crescer.',
     },
     {
-      title: 'Real-time data visualization:',
+      title: '100% Gratuito',
       description:
-        'Transform data into interactive visuals, tracking key metrics in real-time for actionable insights.',
+        'Acreditamos que todo MEI merece boas ferramentas de gestão sem pagar por isso. Por isso a Dokei é e continuará sendo gratuita.',
     },
     {
-      title: 'Predictive analytics engine:',
+      title: 'Compromisso com Você',
       description:
-        'Leverage machine learning to forecast trends and identify opportunities, staying ahead of the curve.',
+        'Construímos a Dokei ouvindo quem vive a realidade do MEI todos os dias, sempre priorizando simplicidade e segurança dos seus dados.',
     },
   ],
 };
 
 // SEO metadata for the page
 const seo = {
-  title: 'About DataNova',
+  title: 'Quem Somos | Dokei',
   description:
-    'Learn more about DataNova, the analytics platform that transforms your Excel data with advanced insights and predictive models.',
+    'Conheça a missão da Dokei e por que a plataforma é 100% gratuita para o MEI.',
 };
 
 // Schema.org metadata for SEO
 const schema: WithContext<Thing> = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  inLanguage: 'en-US',
+  inLanguage: 'pt-BR',
   '@id': Astro.url.href,
   url: Astro.url.href,
-  name: 'About DataNova',
+  name: 'Quem Somos | Dokei',
   description:
-    'Get to know DataNova, the powerful analytics platform for Excel that enables businesses to make data-driven decisions quickly with no coding required.',
+    'Conheça a missão da Dokei e por que a plataforma é 100% gratuita para o MEI.',
   isPartOf: {
     '@type': 'WebSite',
     url: `${Astro.site}`,
-    name: 'DataNova',
+    name: 'Dokei',
     description:
-      'DataNova Analytics Inc. provides advanced analytics for Excel to help businesses unlock actionable insights quickly with no coding required.',
+      'Simplifique a gestão do seu MEI. Ferramentas simples para você focar no que realmente importa: fazer seu negócio crescer.',
   },
 };
 ---
@@ -78,7 +78,7 @@ const schema: WithContext<Thing> = {
     <div class="max-w-7xl">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h1
-          class="text-4xl text-balance text-slate-800 sm:text-5xl md:text-6xl lg:text-7xl"
+          class="text-4xl text-balance text-dokei-primary sm:text-5xl md:text-6xl lg:text-7xl"
         >
           {aboutData.title}
         </h1>
@@ -98,7 +98,7 @@ const schema: WithContext<Thing> = {
             aboutData.statistics.map(stat => (
               <div class="flex flex-col-reverse gap-1">
                 <dt class="text-base/7 text-slate-700">{stat.label}</dt>
-                <dd class="text-4xl font-semibold tracking-tight text-slate-800">
+                <dd class="text-4xl font-semibold tracking-tight text-dokei-primary">
                   {stat.value}
                 </dd>
               </div>
@@ -112,15 +112,15 @@ const schema: WithContext<Thing> = {
   {/* Expertise Section */}
   <section class="mx-auto max-w-[85rem] px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
     <div
-      class="group relative isolate overflow-hidden rounded-3xl bg-teal-200 p-5 sm:p-11"
+      class="group relative isolate overflow-hidden rounded-3xl bg-dokei-border p-5 sm:p-11"
     >
       <div
-        class="group to-off-white pointer-events-none absolute inset-0 -top-[10%] h-[120%] w-full rounded-xl bg-linear-to-r/oklch from-teal-200 opacity-0 transition duration-1000 group-hover:opacity-100"
+        class="group to-off-white pointer-events-none absolute inset-0 -top-[10%] h-[120%] w-full rounded-xl from-dokei-border bg-linear-to-r/srgb opacity-0 transition duration-1000 group-hover:opacity-100"
       >
       </div>
       <div class="svgBlock mx-auto max-w-7xl">
         <h2
-          class="relative pl-4 text-2xl font-semibold text-balance text-slate-800 md:text-3xl md:leading-tight"
+          class="relative pl-4 text-2xl font-semibold text-balance text-dokei-primary md:text-3xl md:leading-tight"
         >
           {expertiseData.title}
         </h2>
@@ -135,7 +135,7 @@ const schema: WithContext<Thing> = {
                 <dt class="text-lg font-semibold text-balance text-slate-600">
                   {item.title}
                 </dt>
-                <dd class="mt-2 text-pretty text-slate-500">
+                <dd class="mt-2 text-pretty text-slate-700">
                   {item.description}
                 </dd>
               </div>

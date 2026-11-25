@@ -4,64 +4,64 @@ import BaseLayout from '@layout/BaseLayout.astro';
 import Icon from '@ui/icons/Icon.astro';
 
 // Hero
-const preTitle = 'Register';
-const title = 'Purchase a license key for the DataNova Core';
+const preTitle = 'Gratuidade';
+const title = 'A Dokei é 100% gratuita para o MEI';
 const subTitle =
-  "The DataNova Core comes in two editions: Essential and Advanced. Choose the one that fits your goals to unlock your data's full potential. Upgrading is simple when you're ready to grow.";
+  'Acreditamos que todo MEI merece boas ferramentas de gestão sem pagar por isso. Todas as ferramentas abaixo fazem parte da mesma conta gratuita.';
 
 // Comparison Table Link
-const compareLinkTitle = 'Compare editions & features';
-const compareLink = 'editions';
+const compareLinkTitle = 'Conheça todas as funcionalidades';
+const compareLink = '/downloads/editions';
 const compareLinkAriaLabel =
-  'Explore the detailed feature comparison of the Essential and Advanced Editions of DataNova Core.';
+  'Veja a lista das funcionalidades da Dokei para o negócio e para as obrigações do MEI.';
 
-// Price Tiers
+// Free tools, all in the same account
 const essentialTier = {
-  title: 'Essential Edition',
-  price: '$115.15',
-  priceDescription: '/Single-User License',
+  title: 'Para o seu negócio',
+  price: 'R$ 0',
+  priceDescription: '/na mesma conta gratuita',
   description: [
-    'For individuals and small teams.',
-    "Unlock your data's potential with robust analytics tools, including 30+ statistical models and 25+ visualization templates to turn insights into action.",
+    'Para o dia a dia de quem empreende sozinho.',
+    'Gere recibos em PDF, registre entradas e saídas separando negócio do pessoal e descubra quanto cobrar pelo seu serviço.',
   ],
   cta: {
-    text: 'Register Essential',
-    link: '#',
+    text: 'Começar grátis',
+    link: 'https://dokei-web-xhrp.vercel.app/cadastro',
   },
 };
 
 const advancedTier = {
-  title: 'Advanced Edition',
-  price: '$250.50',
-  priceDescription: '/Single-User License',
+  title: 'Para as suas obrigações',
+  price: 'R$ 0',
+  priceDescription: '/na mesma conta gratuita',
   description: [
-    'For data-driven organizations.',
-    'Experience unparalleled AI-powered analytics with automated pattern recognition, anomaly detection, and advanced forecasting tools to stay ahead.',
+    'Para manter o seu MEI em dia.',
+    'Acompanhe os lembretes do DAS e da declaração anual e veja quanto movimentou no ano.',
   ],
   cta: {
-    text: 'Register Advanced',
-    link: '#',
+    text: 'Começar grátis',
+    link: 'https://dokei-web-xhrp.vercel.app/cadastro',
   },
 };
 
 // Features
 const features = [
   {
-    title: 'Our guarantee',
+    title: 'Nossa Missão',
     description:
-      "We stand by the quality of DataNova. If you're not completely satisfied, we'll issue a full refund within 30 days of purchase.",
+      'Simplificar a rotina de quem empreende sozinho, tirando a burocracia do caminho para você focar em fazer seu negócio crescer.',
     className: 'rounded-xl lg:rounded-l-xl lg:rounded-r-none',
   },
   {
-    title: 'Lifetime licensing',
+    title: '100% Gratuito',
     description:
-      'Purchase once, use forever. Both Essential and Advanced Editions include perpetual licenses with no ongoing maintenance fees.',
+      'Todo MEI merece boas ferramentas de gestão sem pagar por isso. Por isso a Dokei é e continuará sendo gratuita.',
     className: 'rounded-xl lg:rounded-none',
   },
   {
-    title: '1 year of free updates',
+    title: 'Compromisso com Você',
     description:
-      'Access all software updates free for one year from the purchase date. Afterward, continue receiving updates at a reduced renewal rate.',
+      'Construímos a Dokei ouvindo quem vive a realidade do MEI todos os dias, sempre priorizando simplicidade e segurança dos seus dados.',
     className: 'rounded-xl lg:rounded-r-xl lg:rounded-l-none',
   },
 ];
@@ -69,10 +69,10 @@ const features = [
 // Info Section
 const infoSections = [
   {
-    title: 'System requirements',
+    title: 'Onde usar',
     content: [
-      'DataNova Core is compatible with Windows 10/11 and macOS 11 (Big Sur) or later. Works seamlessly with Excel 2013, 2016, 2019, 2021, and Microsoft 365 on both 32-bit and 64-bit platforms.',
-      'The Subscription Edition also requires an active internet connection.',
+      'A Dokei é responsiva e funciona no computador, tablet ou celular.',
+      'Você pode acessar sua conta e gerenciar seu negócio de onde estiver, a qualquer momento.',
     ],
     className: 'md:row-span-2 md:content-center py-5 sm:p-5',
     icon: null,
@@ -80,9 +80,9 @@ const infoSections = [
   {
     title: null,
     content: [
-      `Every installation package includes the full DataNova Core software, sample workbooks, and detailed user documentation. For enterprise solutions, bulk licensing, or invoicing inquiries, reach out to us at <a href='mailto:sales@datanova.com' aria-label='Sales email' class="hover:text-slate-400 transition-colors duration-300"
->sales@datanova.com</a> or call <a href='tel:1-833-328-2669' aria-label='Contact number' class="hover:text-slate-400 transition-colors duration-300"
->1 (833) 328-2669</a>. Discounts for academic and non-profit organizations are available.`,
+      `Ainda tem dúvidas? Fale com nosso suporte pelo e-mail <a href='mailto:contato@dokei.com.br' aria-label='E-mail de suporte da Dokei' class="underline hover:text-dokei-primary transition-colors duration-300"
+>contato@dokei.com.br</a> ou acesse a <a href='/support/knowledge-base' aria-label='Central de ajuda' class="underline hover:text-dokei-primary transition-colors duration-300"
+>central de ajuda</a>.`,
     ],
     className:
       'md:content-center md:border-l border-t md:border-t-0 border-dashed border-slate-400 py-5 sm:p-5',
@@ -90,24 +90,31 @@ const infoSections = [
     iconClass: 'shrink-0 size-8 text-slate-600 mt-6',
   },
   {
-    title: 'Partners & resellers',
+    title: 'Seus dados protegidos',
     content: [
-      'DataNova Analytics is proud to collaborate with top-tier software resellers worldwide. Contact us to locate an authorized reseller or invite your preferred reseller to join our partner network.',
+      'Não vendemos nem compartilhamos seus dados pessoais com terceiros para fins comerciais. A Dokei segue a Lei Geral de Proteção de Dados (LGPD).',
     ],
     className:
       'md:col-start-2 md:row-start-2 md:content-center md:border-l border-t border-dashed border-slate-400 py-5 sm:p-5',
     icon: null,
   },
 ];
+
+// SEO metadata for the page
+const seo = {
+  title: '100% Gratuito | Dokei',
+  description:
+    'A Dokei é 100% gratuita para o MEI. Sem mensalidades e sem complicação.',
+};
 ---
 
-<BaseLayout>
+<BaseLayout seo={seo}>
   <section class="mx-auto max-w-[85rem] px-4 pt-40 pb-12 sm:px-6 lg:px-8">
     <div class="max-w-7xl">
       <div class="mx-auto max-w-xl lg:mx-0">
         <p class="text-base/7 font-medium text-slate-400">{preTitle}</p>
         <h1
-          class="mt-1 text-4xl text-balance text-slate-800 sm:text-5xl md:text-6xl lg:text-7xl"
+          class="mt-1 text-4xl text-balance text-dokei-primary sm:text-5xl md:text-6xl lg:text-7xl"
         >
           {title}
         </h1>
@@ -117,7 +124,7 @@ const infoSections = [
           {subTitle}
         </p>
         <a
-          href={'#!'}
+          href={compareLink}
           class="group mt-5 inline-flex items-center justify-center gap-x-2 text-center font-medium text-slate-700 shadow-lg shadow-transparent transition duration-300 hover:text-slate-400 focus:outline-hidden"
           aria-label={compareLinkAriaLabel}
         >
@@ -157,30 +164,30 @@ const infoSections = [
       <a
         href={essentialTier.cta.link}
         aria-describedby={essentialTier.title}
-        class="mt-8 block rounded-lg px-3.5 py-2.5 text-center text-sm font-semibold ring-1 ring-teal-700 transition duration-300 ring-inset hover:bg-teal-700/80 hover:text-white focus:bg-teal-700 focus:text-white focus:outline-hidden sm:mt-10"
+        class="mt-8 block rounded-lg px-3.5 py-2.5 text-center text-sm font-semibold ring-1 ring-dokei-primary transition duration-300 ring-inset hover:bg-dokei-primary/80 hover:text-white focus:bg-dokei-primary focus:text-white focus:outline-hidden sm:mt-10"
       >
         {essentialTier.cta.text}</a
       >
     </div>
 
     <div
-      class="relative flex flex-col justify-evenly rounded-3xl bg-teal-700 p-8 shadow-2xl ring-1 ring-teal-900/10 sm:p-10 lg:h-[120%]"
+      class="relative flex flex-col justify-evenly rounded-3xl bg-dokei-primary p-8 shadow-2xl ring-1 ring-dokei-primary/10 sm:p-10 lg:h-[120%]"
     >
-      <h3 class="text-base/7 font-semibold text-teal-100">
+      <h3 class="text-base/7 font-semibold text-dokei-muted">
         {advancedTier.title}
       </h3>
       <p class="mt-4 flex items-baseline gap-x-2">
         <span class="text-5xl font-semibold tracking-tight text-white"
           >{advancedTier.price}</span
         >
-        <span class="text-base text-teal-200"
+        <span class="text-base text-dokei-border"
           >{advancedTier.priceDescription}</span
         >
       </p>
       {
         advancedTier.description.map((desc, index) => (
           <p
-            class={`${index === 0 ? 'mt-6 text-base font-medium text-teal-50 lg:mt-0' : 'mt-8 text-base/6 text-teal-50 sm:mt-10'}`}
+            class={`${index === 0 ? 'mt-6 text-base font-medium text-dokei-muted lg:mt-0' : 'mt-8 text-base/6 text-dokei-muted sm:mt-10'}`}
           >
             {desc}
           </p>
@@ -190,7 +197,7 @@ const infoSections = [
       <a
         href={advancedTier.cta.link}
         aria-describedby={advancedTier.title}
-        class="mt-8 block rounded-lg bg-teal-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs transition-colors duration-300 hover:bg-teal-600/80 focus:bg-teal-600/80 focus:outline-hidden sm:mt-10"
+        class="mt-8 block rounded-lg bg-white px-3.5 py-2.5 text-center text-sm font-semibold text-dokei-primary shadow-xs transition-colors duration-300 hover:bg-white/80 focus:bg-white/80 focus:outline-hidden sm:mt-10"
         >{advancedTier.cta.text}</a
       >
     </div>
@@ -201,7 +208,7 @@ const infoSections = [
       <dl class="grid grid-cols-1 gap-x-3 gap-y-16 text-center lg:grid-cols-3">
         {
           features.map(({ title, description, className }) => (
-            <div class={`flex flex-col gap-y-4 bg-teal-100 p-10 ${className}`}>
+            <div class={`flex flex-col gap-y-4 bg-dokei-muted p-10 ${className}`}>
               <dt class="text-base/7 text-slate-600">{description}</dt>
               <dd class="order-first text-3xl font-medium tracking-tight text-slate-900">
                 <h3>{title}</h3>
@@ -217,13 +224,13 @@ const infoSections = [
     class="mx-auto max-w-[85rem] px-4 pb-10 sm:px-6 md:pb-14 lg:px-8 lg:pb-20"
   >
     <div
-      class="relative grid overflow-hidden rounded-3xl bg-teal-300 px-5 py-5 shadow-xl md:grid-cols-2 md:grid-rows-2"
+      class="relative grid overflow-hidden rounded-3xl bg-dokei-border px-5 py-5 shadow-xl md:grid-cols-2 md:grid-rows-2"
     >
       {
         infoSections.map(({ title, content, className, icon, iconClass }) => (
           <div class={className}>
             {title && (
-              <h3 class="text-2xl font-bold tracking-tight text-balance text-slate-800">
+              <h3 class="text-2xl font-bold tracking-tight text-balance text-dokei-primary">
                 {title}
               </h3>
             )}

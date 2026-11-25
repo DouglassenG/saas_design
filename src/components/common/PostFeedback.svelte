@@ -85,9 +85,9 @@
       type="button"
       onclick={() => handleFeedback('helpful')}
       disabled={feedbackGiven}
-      class="group inline-flex items-center gap-x-2 rounded-lg border border-slate-400 px-3 py-2 text-sm font-medium text-slate-700 hover:border-teal-500 hover:bg-teal-500"
-      class:bg-teal-500={userChoice === 'helpful'}
-      class:border-teal-500={userChoice === 'helpful'}
+      class="group inline-flex items-center gap-x-2 rounded-lg border border-slate-400 px-3 py-2 text-sm font-medium text-slate-700 hover:border-dokei-secondary hover:bg-dokei-secondary"
+      class:bg-dokei-secondary={userChoice === 'helpful'}
+      class:border-dokei-secondary={userChoice === 'helpful'}
     >
       <slot name="helpfulIcon" /> {firstChoice}</button
     >
@@ -108,11 +108,11 @@
   <div class="mt-5 flex items-center justify-center">
     <p class="text-slate-500 text-sm">
       {#if !initialFetch}
-        Fetching...
+        Carregando...
       {:else if helpful === 1}
-        1 person found this helpful
+        1 pessoa achou este conteúdo útil
       {:else}
-        {helpful} people found this helpful
+        {helpful} pessoas acharam este conteúdo útil
       {/if}
     </p>
   </div>

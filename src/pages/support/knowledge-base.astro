@@ -2,25 +2,27 @@
 import BaseLayout from '@layout/BaseLayout.astro';
 
 export const pageContent = {
-  pageTitle: 'Knowledge Base',
+  pageTitle: 'Central de ajuda',
   content:
-    "Still building our knowledge hub! While we're constantly adding new resources and documentation, some topics might not be covered yet. If you can't find what you're looking for, reach out to our team — we'll get you answers fast and make sure you have the support you need.",
+    'Nossa central de ajuda ainda está em construção, e alguns assuntos podem não aparecer aqui. Se você não encontrar o que procura, fale com nosso suporte pelo e-mail contato@dokei.com.br ou converse com a assistente virtual Kauane dentro da Dokei.',
 };
 
 const seo = {
-  title: 'Knowledge Base - DataNova',
+  title: 'Central de ajuda | Dokei',
   description:
-    'Browse DataNova knowledge base articles and documentation. Find answers to common questions about our analytics platform.',
+    'Encontre ajuda para usar a Dokei: recibos, controle financeiro, lembretes DAS, rendimentos e calculadora de preço.',
 };
 ---
 
 <BaseLayout seo={seo}>
-  <section class="bg-linear-to-br/oklch from-teal-200 via-transparent to-white">
+  <section
+    class="from-dokei-border bg-linear-to-br/srgb via-transparent to-white"
+  >
     <div class="mx-auto max-w-[85rem] px-4 pt-48 pb-12 sm:px-6 lg:px-8">
       <div class="max-w-7xl">
         <div class="mx-auto max-w-3xl lg:mx-0">
           <h1
-            class="text-4xl text-balance text-slate-800 sm:text-5xl md:text-6xl lg:text-7xl"
+            class="text-4xl text-balance text-dokei-primary sm:text-5xl md:text-6xl lg:text-7xl"
           >
             {pageContent.pageTitle}
           </h1>
