@@ -19,7 +19,7 @@ const copyrightYear = new Date().getFullYear();
 
 // Developer or team behind the website
 const craftedBy = {
-  name: 'gulamoff',
+  // name: 'gulamoff',
   url: 'https://github.com/mearashadowfax',
 };
 ---
@@ -88,25 +88,15 @@ const craftedBy = {
       {/* Copyright and Crafted By Section */}
       <p class="text-dokei-muted-foreground text-sm">
         &copy; {copyrightYear}{' '}
-        {companyName}. Todos os direitos reservados. Crafted by {' '}
+        {companyName}. Todos os direitos reservados.  {' '}
         <a
           href={craftedBy.url}
           target="_blank"
           rel="noopener noreferrer"
           class="ring-dokei-secondary hover:text-dokei-primary font-medium underline underline-offset-2 outline-hidden transition duration-300 hover:decoration-dashed focus:outline-hidden focus-visible:ring-3"
         >
-          {craftedBy.name}
         </a>
-        <br />
-        Distributed by {' '}
-        <a
-          href={'https://themewagon.com'}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="ring-dokei-secondary hover:text-dokei-primary font-medium underline underline-offset-2 outline-hidden transition duration-300 hover:decoration-dashed focus:outline-hidden focus-visible:ring-3"
-        >
-          ThemeWagon
-        </a>
+        <br />        
       </p>
     </div>
   </div>
